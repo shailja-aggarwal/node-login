@@ -1,0 +1,30 @@
+
+POST http://localhost:3000/signup
+Content-Type: application/json
+
+{
+    "username": "tim",
+    "password": "password"
+}
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username": "tom",
+    "password": "password"
+}
+
+###
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjp7Im5hbWUiOiJ0b20iLCJpYXQiOjE2OTM3MzUyODd9LCJpYXQiOjE2OTM3MzUzMjMsImV4cCI6MTY5MzczNTM1M30.ghjBl1SoCY4-Ri7ppT4iLRup4eX6uUtsyjE56ArO99Y
+
+
+###
+POST http://localhost:3000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidG9tIiwiaWF0IjoxNjkzNzM1Mjg3fQ.as8amSGy8MUj-P7Fqo0VaU66o9Tz4uH3tOVPsAYIfMY"
+}
